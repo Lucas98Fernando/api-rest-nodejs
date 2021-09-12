@@ -55,13 +55,13 @@ router.post('/', async (req, res) => {
 
         // Vincular as tarefas aos projetos
         // Aguardando todas as promises serem resolvidas, para a partir daí salvar o projeto com as tarefas vinculadas
-        await Promise.all(tasks.map(task => {
+        await Promise.all(tasks.map(async task => {
             const projectTask = new Task({
                 ...task,
                 project: project._id
             })
 
-            projectTask.save()
+            await projectTask.save()
             project.tasks.push(projectTask)
         }))
 

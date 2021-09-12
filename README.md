@@ -1,22 +1,22 @@
-# **API Rest com Node.js, Express e MongoDB**
+# **API Rest com Node.js, Express e MongoDB** 💻🚀
 
 - A API possui cadastro, login de usuários com autenticação através do JWT (JSON Web Token), assim também como rotas de projetos controladas por um middleware, onde só podem ser acessadas se houver uma sessão com um tokem válido.
 
-## Pré-requisitos para utilização:
+## ✔️ Pré-requisitos para utilização:
 - Node.js
 - NPM ou YARN
 - Editor de código (Visual Studio Code, Sublime, Atom, etc...)
 
-## **Rodando a API localmente em seu computador**
+## 🔨 **Rodando a API localmente em seu computador**
 
-### **Clone o repositório**
+### 1️⃣ **Clone o repositório**
 - Abra o terminal e execute o comando abaixo:
 
 <pre>
     <code>git clone https://github.com/Lucas98Fernando/api-rest-nodejs.git</code>
 </pre>
 
-### **Instale as dependências**
+### 2️⃣ **Instale as dependências**
 - Abra a pasta do projeto na raíz e execute o comando abaixo:
 
 <pre>
@@ -29,7 +29,7 @@ ou se quiser utilizar o NPM:
     <code>npm i</code>
 </pre>
 
-### **Iniciando a API**
+### 3️⃣ **Iniciando a API**
 
 <pre>
     <code>yarn start</code>
@@ -41,7 +41,7 @@ ou se quiser utilizar o NPM:
     <code>npm start</code>
 </pre>
 
-### **Testando a API**
+### 4️⃣ **Testando a API**
 - Para acessar a primeira versão da documentação da API no ambiente de desenvolvimento, acesse: [ver documentação com Swagger](http://localhost:3000/v1/api-docs).
 
 - Se você preferir pode utilizar o [Insomnia](https://insomnia.rest/download) ou [Postman](https://www.postman.com/)
