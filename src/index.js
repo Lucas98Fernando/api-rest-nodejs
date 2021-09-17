@@ -1,6 +1,7 @@
 // Importando módulos
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const swaggerUi = require('swagger-ui-express')
 const swaggerDocs = require('./docs/swagger.json')
 
@@ -10,6 +11,8 @@ app.use(express.json())
 app.use(express.urlencoded({
     extended: false
 }))
+
+app.use(cors())
 
 // Rota da documentação com o Swagger
 app.use('/v1/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
